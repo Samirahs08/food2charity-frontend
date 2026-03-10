@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import DonorDashboard from "./pages/DonorDashboard";
 import NgoDashboard from "./pages/NgoDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
+import AddDonation from "./pages/AddDonation";
 
 function App(){
   return (
@@ -16,6 +17,7 @@ function App(){
       <Navbar />
 
       <Routes>
+        <Route path="/add-donation" element={<AddDonation />} />
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
